@@ -82,7 +82,7 @@ class ImageList:
         retfiles = []
         for root,dirs,files in os.walk(self.image_dir):
             for fn in files:
-                if not fn.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp')):
+                if not fn.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.webp')):
                     continue
                 fpath = os.path.join(root, fn)
                 retfiles.append(fpath)
